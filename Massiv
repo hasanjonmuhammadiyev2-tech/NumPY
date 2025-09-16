@@ -1,0 +1,196 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPwY0IPlcHCgztyyUpn5XHy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hasanjonmuhammadiyev2-tech/NumPY/blob/main/Massiv\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "ajO-FzSvKWEg"
+      },
+      "outputs": [],
+      "source": [
+        "import pandas as pd"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data={\n",
+        "    \"Ism\":[\"Hasanjon\",\"Oybek\",\"Toxirjon\",\"Mansurjon\",\"Azimjon\"],\n",
+        "    \"Familiya\":[\"Muhammadiyev\",\"Obidjonov\",\"Mavlonqulov\",\"Rahimnazarov\",\"Junaydullayev\"],\n",
+        "    \"Yoshi\":[19,20,20,19,19],\n",
+        "    \"T-gan viloyati\":[\"Farg'ona\",\"Farg'ona\",\"Farg'ona\",\"Namangan\",\"Namangan\"]\n",
+        "}\n",
+        "baza=pd.DataFrame(data)\n",
+        "print(baza)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aBZMydC2K1hf",
+        "outputId": "c84a2ee2-1dd2-4dd3-b314-2a4cef18363a"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "         Ism       Familiya  Yoshi T-gan viloyati\n",
+            "0   Hasanjon   Muhammadiyev     19       Farg'ona\n",
+            "1      Oybek      Obidjonov     20       Farg'ona\n",
+            "2   Toxirjon    Mavlonqulov     20       Farg'ona\n",
+            "3  Mansurjon   Rahimnazarov     19       Namangan\n",
+            "4    Azimjon  Junaydullayev     19       Namangan\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "NpQCs55BPowY"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr=np.array([2,4,6])\n",
+        "print(arr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZDcTXbD5QsLw",
+        "outputId": "c8bd1bfb-61a9-4d61-d899-f096d72c4509"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2 4 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr=np.array([[1,2,3,4,5],[11,22,33,44,55]])\n",
+        "print(arr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ih33DO63RHn8",
+        "outputId": "3a08dd26-88ad-46e2-ed77-5edfafbf6526"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[ 1  2  3  4  5]\n",
+            " [11 22 33 44 55]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nollar=np.zeros((5,6))\n",
+        "print(nollar)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pnh-GljIRp5L",
+        "outputId": "dda6cd39-9bae-4b8c-af2d-b2495e1a0035"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0. 0. 0. 0. 0. 0.]\n",
+            " [0. 0. 0. 0. 0. 0.]\n",
+            " [0. 0. 0. 0. 0. 0.]\n",
+            " [0. 0. 0. 0. 0. 0.]\n",
+            " [0. 0. 0. 0. 0. 0.]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr=np.arange(1,25)\n",
+        "print(arr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RcGJeqCOsMYS",
+        "outputId": "d2fdcbdb-6fd5-49d2-8aec-2d0a5d330ad1"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "tWriCBmLNl3O"
+      }
+    }
+  ]
+}
