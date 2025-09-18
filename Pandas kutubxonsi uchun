@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPIq5xGUANDnucz//5MVsP2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hasanjonmuhammadiyev2-tech/NumPY/blob/main/Pandas%20kutubxonsi%20uchun\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "NnnffjbVImdm"
+      },
+      "outputs": [],
+      "source": [
+        "import pandas as pd"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data={\n",
+        "    \"Ism\":[\"Hasanjon\",\"Oybek\",\"Toxirjon\",\"Mansurjon\",\"Azimjon\"],\n",
+        "    \"Familiyaa\":[\"Muhammadiyev\",\"Obidjonov\",\"Mavlonqulov\",\"Rahimnazarov\",\"Junaydullayev\"],\n",
+        "    \"Manzili\":[\"(Farg'ona viloyati ,Dang'ara tumani)\",\"(Farg'ona viloyati O'zbekiston tumani)\",\"(Farg'ona viloyati Beshariq tumani)\",\"Namangan shahri\",\"Namangan shahri\"],\n",
+        "    \"Yoshi\":[19,20,20,19,19],\n",
+        "    \"Kursi\":[2,2,2,2,2]\n",
+        "}\n",
+        "baza=pd.DataFrame(data)\n",
+        "print(baza)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LtuW3QMgJWkl",
+        "outputId": "def0f919-287f-4515-b8a2-5228ba18588b"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "         Ism      Familiyaa                                 Manzili  Yoshi  \\\n",
+            "0   Hasanjon   Muhammadiyev    (Farg'ona viloyati ,Dang'ara tumani)     19   \n",
+            "1      Oybek      Obidjonov  (Farg'ona viloyati O'zbekiston tumani)     20   \n",
+            "2   Toxirjon    Mavlonqulov     (Farg'ona viloyati Beshariq tumani)     20   \n",
+            "3  Mansurjon   Rahimnazarov                         Namangan shahri     19   \n",
+            "4    Azimjon  Junaydullayev                         Namangan shahri     19   \n",
+            "\n",
+            "   Kursi  \n",
+            "0      2  \n",
+            "1      2  \n",
+            "2      2  \n",
+            "3      2  \n",
+            "4      2  \n"
+          ]
+        }
+      ]
+    }
+  ]
+}
